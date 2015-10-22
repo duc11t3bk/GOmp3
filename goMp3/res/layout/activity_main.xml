@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ứng dụng sẽ tắt sau :" 
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        />
+	
+	<EditText 
+	    android:id="@+id/etTime"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:hint="enter time sleep"
+	    android:layout_centerVertical="true"
+	    android:layout_toRightOf="@id/tvTitle"
+	    
+	    />
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:weightSum="2"
+	    android:orientation="horizontal"
+	    >
+		<Button 
+		    android:id="@+id/btnStart"
+		    android:text="Start"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    />
+		<Button 
+		    android:id="@+id/btnStop"
+		    android:text="Stop"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    />
+		    
+	</LinearLayout>
+</RelativeLayout>
+
